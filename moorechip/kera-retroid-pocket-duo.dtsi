@@ -8,6 +8,8 @@
 #include "../qcom/kera-mtp.dtsi"
 #include "../qcom/kera_ufs2.dtsi"
 #include "../qcom/kera-pm7550ba.dtsi"
+#include "../qcom/wlan/kera-wcn7750.dtsi"
+#include "../qcom/bt/kera-wcn7750-bt.dtsi"
 
 &aliases {
 	hsuart1 = &qupv3_se10_uart;

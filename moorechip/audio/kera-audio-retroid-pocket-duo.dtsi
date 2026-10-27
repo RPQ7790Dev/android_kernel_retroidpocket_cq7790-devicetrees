@@ -62,13 +62,15 @@
 &wsa_spkr_en13 { status = "disabled"; };
 
 &kera_snd {
-	/delete-property/ qcom,tdm-audio-intf;
 	/delete-property/ qcom,wcd-disable-legacy-surge;
 	/delete-property/ wcd939x-i2c-handle;
-	/delete-property/ qcom,msm-mbhc-usbc-audio-supported;
 	qcom,model = "kera-mtp-snd-card";
 	qcom,mi2s-audio-intf = <1>;
+	qcom,tdm-audio-intf = <1>;
+	qcom,wcn-bt = <0>;
+	qcom,wcn-btfm-proxy = <1>;
 	qcom,wcd-disabled = <1>;
+	qcom,msm-mbhc-usbc-audio-supported = <1>;
 	swr-haptics-unsupported;
 	qcom,audio-routing =
 		"TX DMIC0", "Digital Mic0",
@@ -246,7 +248,6 @@
 		compatible = "awinic,aw883xx_smartpa";
 		reg = <0x34>;
 		reset-gpio = <&tlmm 127 0>;
-		rename-flag = <1>;
 		sync-load = <1>;
 		sound-channel = <1>;
 		re-min = <1000>;
@@ -258,7 +259,6 @@
 		compatible = "awinic,aw883xx_smartpa";
 		reg = <0x35>;
 		reset-gpio = <&tlmm 126 0>;
-		rename-flag = <1>;
 		sync-load = <1>;
 		sound-channel = <0>;
 		re-min = <1000>;
