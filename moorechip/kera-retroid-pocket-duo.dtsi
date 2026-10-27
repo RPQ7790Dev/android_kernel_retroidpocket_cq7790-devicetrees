@@ -13,9 +13,51 @@
 	hsuart1 = &qupv3_se10_uart;
 };
 
-&cam_cc_titan_top_gdsc {
-	status = "disabled";
-};
+&cam_req_mgr { status = "disabled"; };
+&cam_sync { status = "disabled"; };
+&cam_cci0 { status = "disabled"; };
+&cam_cci1 { status = "disabled"; };
+&cam_csiphy0 { status = "disabled"; };
+&cam_csiphy1 { status = "disabled"; };
+&cam_csiphy2 { status = "disabled"; };
+&cam_csiphy3 { status = "disabled"; };
+&cam_csiphy_tpg13 { status = "disabled"; };
+&cam_csiphy_tpg14 { status = "disabled"; };
+&cam_csiphy_tpg15 { status = "disabled"; };
+&cam_smmu { status = "disabled"; };
+&cam_cpas { status = "disabled"; };
+&cam_cdm_intf { status = "disabled"; };
+&cam_rt_cdm0 { status = "disabled"; };
+&cam_rt_cdm1 { status = "disabled"; };
+&cam_rt_cdm2 { status = "disabled"; };
+&cam_rt_cdm3 { status = "disabled"; };
+&cam_isp { status = "disabled"; };
+&cam_vfe0 { status = "disabled"; };
+&cam_vfe1 { status = "disabled"; };
+&cam_vfe2 { status = "disabled"; };
+&cam_vfe_lite0 { status = "disabled"; };
+&cam_csid0 { status = "disabled"; };
+&cam_csid1 { status = "disabled"; };
+&cam_csid2 { status = "disabled"; };
+&cam_csid_lite0 { status = "disabled"; };
+&icp0 { status = "disabled"; };
+&icp1 { status = "disabled"; };
+&cam_icp0 { status = "disabled"; };
+&cam_icp1 { status = "disabled"; };
+&cam_ipe0 { status = "disabled"; };
+&cam_ofe { status = "disabled"; };
+&cam_jpeg { status = "disabled"; };
+&cam_jpeg_enc0 { status = "disabled"; };
+&cam_jpeg_dma0 { status = "disabled"; };
+&cam_hf_qtb { status = "disabled"; };
+&cambistmclkcc { status = "disabled"; };
+&camcc { status = "disabled"; };
+&cam_cc_ipe_0_gdsc { status = "disabled"; };
+&cam_cc_ofe_gdsc { status = "disabled"; };
+&cam_cc_tfe_0_gdsc { status = "disabled"; };
+&cam_cc_tfe_1_gdsc { status = "disabled"; };
+&cam_cc_tfe_2_gdsc { status = "disabled"; };
+&cam_cc_titan_top_gdsc { status = "disabled"; };
 
 &wcd_usbss {
 	status = "disabled";
