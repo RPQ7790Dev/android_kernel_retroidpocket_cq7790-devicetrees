@@ -246,6 +246,7 @@
 		compatible = "awinic,aw883xx_smartpa";
 		reg = <0x34>;
 		reset-gpio = <&tlmm 127 0>;
+		rename-flag = <1>;
 		sync-load = <1>;
 		sound-channel = <1>;
 		re-min = <1000>;
@@ -257,6 +258,7 @@
 		compatible = "awinic,aw883xx_smartpa";
 		reg = <0x35>;
 		reset-gpio = <&tlmm 126 0>;
+		rename-flag = <1>;
 		sync-load = <1>;
 		sound-channel = <0>;
 		re-min = <1000>;
